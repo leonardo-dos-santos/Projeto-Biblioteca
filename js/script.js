@@ -219,3 +219,18 @@ addBookBtn.onclick = openAddBookModal
 overlay.onclick = closeAllModals
 addBookForm.onsubmit = addBook
 window.onkeydown = handleKeyboardInput
+
+// Local Storage
+
+const saveLocal = () => {
+  localStorage.setItem('library', JSON.stringify(library.books))
+}
+
+const restoreLocal = () => {
+  const books = JSON.parse(localStorage.getItem('library'))
+  if (books) {
+    library.books = books.map((book) => JSONToBook(book))
+  } else {
+    library.books = []
+  }
+}
