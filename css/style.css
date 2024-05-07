@@ -86,3 +86,27 @@ input[type='number'] {
 .btn-light-red {
   background-color: var(--light-red);
 }
+
+/* HEADER */
+
+.header {
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logged-in,
+.logged-out {
+  display: none;
+}
+
+.logged-in.active,
+.logged-out.active {
+  display: flex;
+  gap: 20px;
+}
