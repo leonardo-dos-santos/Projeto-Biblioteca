@@ -158,12 +158,75 @@ input[type='number'] {
   padding: var(--spacing-sm);
 }
 
-.fa-github {
-  font-size: 24px;
-  color: var(--black);
-  transition: transform 0.3s ease-in-out;
+/* MODALS */
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  background-color: var(--grey);
+  text-align: center;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s ease-in-out;
 }
 
-.fa-github:hover {
-  transform: rotate(360deg) scale(1.2);
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.add-book-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.add-book-form button {
+  width: 100%;
+}
+
+.error-msg {
+  display: none;
+  color: red;
+}
+
+.error-msg.active {
+  display: block;
+  margin-top: -15px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border-radius: var(--border-radius);
+}
+
+.is-read {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  accent-color: white;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay.active {
+  display: block;
 }
