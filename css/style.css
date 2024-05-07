@@ -230,3 +230,21 @@ input[type='number'] {
 .overlay.active {
   display: block;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 400px) {
+  .header .container {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding-top: var(--spacing-sm);
+  }
+
+  .main {
+    margin-top: 0;
+  }
+
+  :root {
+    --spacing-xl: 20px;
+  }
+}
