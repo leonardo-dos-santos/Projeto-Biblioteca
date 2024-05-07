@@ -1,6 +1,6 @@
 # Biblioteca Virtual
 
-Ver Site -> https://github.com/leonardo-dos-santos/Projeto-Biblioteca/settings/pages
+Ver Site -> https://leonardo-dos-santos.github.io/Projeto-Biblioteca/
 
 A Biblioteca Virtual é uma aplicação web que permite aos usuários gerenciar sua própria biblioteca de livros. Com uma interface simples e intuitiva, os usuários podem adicionar novos livros, marcar se já foram lidos, remover livros da biblioteca e visualizar detalhes dos livros existentes.
 
