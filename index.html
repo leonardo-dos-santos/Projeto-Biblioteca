@@ -15,7 +15,7 @@
   </header>
 
   <main class="main container">
-    <button class="btn btn-add" id="addBookBtn">+ Add book</button>
+    <button class="btn btn-add" id="addBookBtn">+ Add Livro</button>
     <div class="books-grid" id="booksGrid"></div>
   </main>
 
@@ -28,6 +28,35 @@
       <a href="https://github.com/leonardo-dos-santos" target="_blank">Leonardo Santos</a>
     </p>
   </footer>
+
+  <div class="modal" id="addBookModal">
+    <form class="add-book-form" id="addBookForm">
+      <h3>Add novo Livro</h3>
+      <input
+        class="input"
+        type="text"
+        id="title"
+        placeholder="Title"
+        required
+        maxlength="100"
+      />
+      <p class="error-msg" id="errorMsg"></p>
+      <input
+        class="input"
+        type="text"
+        id="author"
+        placeholder="Author"
+        required
+        maxlength="100"
+      />
+      <input
+        class="input"
+        type="number"
+        id="pages"
+        placeholder="Pages"
+        required
+        max="10000"
+      />
 
   <script src="js/script.js"></script>
 </body>
