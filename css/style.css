@@ -24,3 +24,18 @@
   padding: 0;
   margin: 0;
 }
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: var(--grey);
+  color: var(--black);
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  word-wrap: break-word;
+  margin-bottom: 100px;
+}
